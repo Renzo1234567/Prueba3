@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_bright"
+    android:background="@drawable/fondos"
     tools:context="com.example.corpsarens2.proyecto3.Proyecto3"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
 
     <EditText
         android:id="@+id/Nombre_Usuario"
@@ -20,8 +20,8 @@
         android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:fontFamily="casual"
+        android:hint="Usuario:"
         android:inputType="textPersonName"
-        android:text="Usuario:"
         app:layout_constraintBottom_toTopOf="@+id/Texto_2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -35,79 +35,79 @@
         style="@android:style/Widget.Button"
         android:layout_width="171dp"
         android:layout_height="48dp"
+        android:layout_marginTop="30dp"
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="casual"
         android:text="Entrar"
         android:visibility="visible"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="30dp"
         app:layout_constraintTop_toBottomOf="@+id/Contraseña_Usuario"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
 
     <EditText
         android:id="@+id/Contraseña_Usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="15dp"
         android:background="@android:drawable/editbox_background"
         android:ems="10"
         android:fontFamily="casual"
+        android:hint="Contraseña:"
         android:inputType="textPassword"
-        android:text="Contraseña:"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/Nombre_Usuario"
         app:layout_constraintTop_toBottomOf="@+id/Nombre_Usuario"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/Nombre_Usuario"
-        android:layout_marginLeft="0dp" />
+        tools:layout_constraintTop_creator="1" />
 
     <TextView
         android:id="@+id/Texto_1"
         android:layout_width="0dp"
         android:layout_height="19dp"
+        android:layout_marginBottom="61dp"
         android:fontFamily="casual"
         android:text="No tienes cuenta? "
-        app:layout_constraintRight_toLeftOf="@+id/Texto_2"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="61dp" />
+        app:layout_constraintRight_toLeftOf="@+id/Texto_2"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
     <TextView
         android:id="@+id/Texto_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
         android:fontFamily="casual"
         android:text="Registrate aqui"
         android:textColor="?attr/actionModeSplitBackground"
-        android:layout_marginEnd="77dp"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@+id/Texto_1"
+        app:layout_constraintRight_toRightOf="parent"
         tools:layout_constraintBaseline_creator="1"
-        android:layout_marginRight="77dp" />
+        tools:layout_constraintRight_creator="1" />
 
     <TextView
         android:id="@+id/Texto_3"
         android:layout_width="0dp"
         android:layout_height="123dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginStart="24dp"
         android:fontFamily="cursive"
         android:text="Done!"
         android:textColor="@android:color/background_light"
         android:textSize="100sp"
         android:textStyle="bold|italic"
-        android:layout_marginEnd="24dp"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toTopOf="@+id/Nombre_Usuario"
-        app:layout_constraintRight_toRightOf="@+id/Nombre_Usuario"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="16dp"
         app:layout_constraintLeft_toLeftOf="@+id/Nombre_Usuario"
-        android:layout_marginLeft="24dp"
-        android:layout_marginRight="24dp" />
+        app:layout_constraintRight_toRightOf="@+id/Nombre_Usuario"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
 
 </android.support.constraint.ConstraintLayout>
