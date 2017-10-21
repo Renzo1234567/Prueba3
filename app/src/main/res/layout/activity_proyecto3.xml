@@ -21,7 +21,7 @@
         android:ems="10"
         android:fontFamily="casual"
         android:inputType="textPersonName"
-        android:text="Usuarioox:"
+        android:text="Usuarioopo:"
         app:layout_constraintBottom_toTopOf="@+id/Texto_2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
